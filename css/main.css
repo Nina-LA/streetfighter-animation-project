@@ -21,14 +21,52 @@ body {
 /*********  RYU ANIMATION CONTENT  *********/
 
 .ryu {
+	width: 659px;
+	height: 494px;
 	display: float;
 	float: left;
 }
 
-img {
+.hadouken {
+  background-image: url('../images/hadouken.gif');
+  width: 156px; 
+  height: 90px;
+  display: none;
+  float: left;
+  position: absolute;
+  z-index: 10;
+}
+
+.ryu_still, .ryu_ready, .ryu_throwing {
 	width: 659px;
 	height: 494px;
 }
+
+.ryu_ready, .ryu_throwing {
+	display: none;
+}
+
+.ryu_ready {
+	background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu_still {
+	background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-throwing {
+  background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+  background-repeat: no-repeat;
+}
+
+
+/*img {
+	width: 659px;
+	height: 494px;
+}*/
 
 
 
