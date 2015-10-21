@@ -1,8 +1,8 @@
 /*********  GENERAL BODY STYLES  *********/
 
-* {
+/** {
   outline: red 1px solid;
-}
+}*/
 
 body {
 	background: #000;
@@ -52,7 +52,7 @@ body {
 }
 
 .ryu_ready, .ryu_throwing {
-	display: block;
+	display: none;
 }
 
 /*.ryu_throwing {
