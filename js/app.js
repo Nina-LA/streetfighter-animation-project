@@ -10,10 +10,24 @@ $('.ryu').mouseenter(function() {
 	// play hadouken sounds
 	$('.ryu_ready').hide();
 	$('.ryu_throwing').show();
-	$('.hadouken').show();
-	// show hadouken and animate it to the right of the screen
+	$('.hadouken').show().animate(
+		{'left': '1020px'},
+		500,
+		function() {
+			$(this).hide();
+			$(this).css('left', '600px');
+	// animate hadouken to the right of the screen
+		}
+	);
 })
 .mouseup(function () {
 	$('.ryu_throwing').hide();
 	$('.ryu_ready').show();
 })
+
+function playHadouken() {
+	$('#hadouken_sound')[0].volume = 0.5;
+	$('#hadouken_sound')[0].load();
+	$('#hadouken_sound')[0].play();
+}
+
