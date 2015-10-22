@@ -7,6 +7,7 @@ $('.ryu').mouseenter(function() {
 	$('.ryu_ready').hide();
 })
 .mousedown(function() {
+	playHadouken();
 	// play hadouken sounds
 	$('.ryu_ready').hide();
 	$('.ryu_throwing').show();
@@ -26,7 +27,7 @@ $('.ryu').mouseenter(function() {
 })
 
 function playHadouken() {
-	$('#hadouken_sound')[0].volume = 0.5;
+	$('#hadouken_sound')[0].volume = 0.2;
 	$('#hadouken_sound')[0].load();
 	$('#hadouken_sound')[0].play();
 }
