@@ -25,10 +25,15 @@ $('.ryu').mouseenter(function() {
 	$('.ryu_throwing').hide();
 	$('.ryu_ready').show();
 })
+$('.ryu_cool').keydown(function() {
+	$('ryu_cool').keydown(88);
+})
+
 
 function playHadouken() {
 	$('#hadouken_sound')[0].volume = 0.2;
 	$('#hadouken_sound')[0].load();
 	$('#hadouken_sound')[0].play();
 }
+
 
