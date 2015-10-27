@@ -9,7 +9,7 @@ $('.ryu').mouseenter(function() {
 .mousedown(function() {
 	playHadouken();
 	// play hadouken sounds
-	$('.ryu_ready').hide();
+	$('.action').hide();
 	$('.ryu_throwing').show();
 	$('.hadouken').show().animate(
 		{'left': '1020px'},
@@ -22,7 +22,7 @@ $('.ryu').mouseenter(function() {
 	);
 })
 .mouseup(function () {
-	$('.ryu_throwing').hide();
+	$('.action').hide();
 	$('.ryu_ready').show();
 })
 $(document).keydown(function (event) //parameter 

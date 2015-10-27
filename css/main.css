@@ -23,6 +23,15 @@ body {
 	z-index: 1;
 }
 
+p {
+	color: red;
+	font-size: 12px;
+	top: 5px;
+	left: 400px;
+	position: absolute;
+	margin: 0 auto;
+}
+
 
 /*********  RYU ANIMATION CONTENT  *********/
 
