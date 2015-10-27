@@ -25,8 +25,21 @@ $('.ryu').mouseenter(function() {
 	$('.ryu_throwing').hide();
 	$('.ryu_ready').show();
 })
-$('.ryu_cool').keydown(function() {
-	$('ryu_cool').keydown(88);
+$(document).keydown(function (event) //parameter 
+// function is an event handler
+// keydown is an event listener
+{ 
+	if(event.keyCode === 88) {
+		$('.action').hide();
+		$('.ryu_cool').show();
+	}
+})
+.keyup(function (event) //parameter 
+{ 
+	if(event.keyCode === 88) {
+		$('.action').hide();
+		$('.ryu_still').show();
+	}
 })
 
 
